@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="기념일 제목" />
+
+    <EditText
+        android:id="@+id/annivious_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="기념일 제목을 입력하세요."
+        android:inputType="text"
+        android:maxLines="1" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="기념일 설명" />
+
+    <EditText
+        android:id="@+id/annivious_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="어떤 기념일인지 입력하세요.(입력안해도됨)"
+        android:inputType="text"
+        android:maxLines="1" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="날짜 입력"
+        android:layout_marginBottom="4dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:text="년"
+            android:gravity="left"
+            android:layout_weight="2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:text="월"
+            android:gravity="left"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:text="일"
+            android:gravity="left"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/annivious_year"
+            android:inputType="numberDecimal"
+            android:gravity="center"
+            android:layout_weight="2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="0000" />
+
+        <EditText
+            android:id="@+id/annivious_month"
+            android:inputType="numberDecimal"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="00" />
+
+        <EditText
+            android:id="@+id/annivious_day"
+            android:inputType="numberDecimal"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="00" />
+    </LinearLayout>
+
+</LinearLayout>

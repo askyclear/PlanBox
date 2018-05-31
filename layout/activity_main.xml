@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical"
+    tools:context="com.example.korea.planner.View.Main.MainActivity">
+
+    <TextView
+        android:id="@+id/main_year"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="@string/_2017"
+        android:textColor="@android:color/holo_blue_dark"
+        android:textSize="50sp" />
+
+    <TextView
+        android:id="@+id/main_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="50dp"
+        android:gravity="center"
+        android:text="@string/app_name"
+        android:textColor="@android:color/black"
+        android:textSize="25sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/main_but1"
+            style="@style/CircleButton"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:drawableLeft="@drawable/ic_access_alarm_white_36dp" />
+
+        <Button
+            android:id="@+id/main_but2"
+            style="@style/CircleButton"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:drawableLeft="@drawable/ic_perm_contact_calendar_pink_a400_36dp" />
+
+        <Button
+            android:id="@+id/main_but3"
+            style="@style/CircleButton"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:drawableLeft="@drawable/ic_today_purple_a400_36dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/main_but4"
+            style="@style/CircleButton"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:drawableLeft="@drawable/ic_note_cyan_400_36dp" />
+
+        <Button
+            android:id="@+id/main_but5"
+            style="@style/CircleButton"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:drawableLeft="@drawable/goal2" />
+
+        <Button
+            android:id="@+id/main_but6"
+            style="@style/CircleButton"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:drawableLeft="@drawable/ic_info_white_36dp" />
+
+    </LinearLayout>
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/main_adview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        app:adSize="BANNER"
+        app:adUnitId="@string/banner_ad_unit_id" />
+
+
+</LinearLayout>

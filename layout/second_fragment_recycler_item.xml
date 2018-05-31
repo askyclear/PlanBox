@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="76dp"
+    app:cardElevation="5dp"
+    app:cardCornerRadius="5dp"
+    android:layout_marginTop="2dp"
+    android:layout_marginBottom="2dp">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+    android:paddingTop="4dp"
+        android:paddingRight="4dp">
+
+    <FrameLayout
+        android:layout_width="72dp"
+        android:layout_height="72dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingTop="16dp"
+        android:paddingBottom="16dp">
+
+        <Button
+            android:id="@+id/life_color"
+            android:layout_gravity="center"
+            android:background="@color/red"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="76dp"
+        android:orientation="vertical"
+        android:paddingRight="16dp"
+        android:paddingTop="4dp">
+
+        <TextView
+            android:id="@+id/life_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:textSize="13sp"
+            android:ellipsize="end"
+            android:fontFamily="Roboto Regular"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/life_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:textSize="13sp"
+            android:paddingTop="4dp"
+            android:fontFamily="Roboto Regular" />
+
+        <TextView
+            android:id="@+id/life_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="13sp"
+            android:paddingTop="4dp"
+            android:fontFamily="Roboto Regular" />
+
+    </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/life_delete"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_delete_red_600_36dp" />
+    </LinearLayout>
+</android.support.v7.widget.CardView>

@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="24dp"
+    android:paddingRight="24dp"
+    android:paddingTop="24dp"
+    android:paddingBottom="24dp">
+
+    <EditText
+        android:id="@+id/dialog_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/title_input_hint"
+        android:inputType="text"
+        android:textColorHint="@color/grey"
+        android:textSize="12sp"
+        android:textColor="@android:color/black"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:layout_marginBottom="20dp" />
+
+    <EditText
+        android:textSize="12sp"
+        android:id="@+id/dialog_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/black"
+        android:hint="@string/content_input_hint"
+        android:inputType="text"
+        android:imeOptions="actionDone"
+        android:textColorHint="@color/grey"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:layout_marginBottom="20dp" />
+
+    <TextView
+        android:focusable="false"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/time_input"
+        android:textColor="@android:color/black"
+        android:layout_marginBottom="8dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="-30dp">
+
+        <TextView
+            android:focusable="false"
+            android:layout_width="0dp"
+            android:layout_height="24dp"
+            android:layout_weight="1"
+            android:gravity="left|center"
+            android:text="@string/before"
+            android:textColor="@android:color/black" />
+
+        <Button
+            android:id="@+id/plus1hour"
+            android:padding="0dp"
+            android:text="@string/plus1hour"
+            android:layout_width="0dp"
+            android:layout_height="24dp"
+
+            android:gravity="center"
+            android:textSize="12sp"
+            android:layout_weight="1" />
+
+        <Button
+            android:id="@+id/plus30"
+            android:padding="0dp"
+            android:text="@string/plus30"
+            android:layout_width="0dp"
+            android:layout_height="24dp"
+            android:gravity="center"
+            android:textSize="12sp"
+            android:layout_weight="1" />
+
+        <Button
+            android:id="@+id/plus10"
+            android:padding="0dp"
+            android:text="@string/plus10"
+            android:layout_width="0dp"
+            android:layout_height="24dp"
+            android:gravity="center"
+            android:textSize="12sp"
+            android:layout_weight="1" />
+
+        <Button
+            android:id="@+id/plus5"
+            android:padding="0dp"
+            android:text="@string/plus5"
+            android:layout_gravity="right"
+            android:layout_width="0dp"
+            android:layout_height="24dp"
+            android:gravity="center"
+            android:textSize="12sp"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <TimePicker
+        android:id="@+id/time_before"
+        android:layerType="hardware"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleY="0.7"
+        android:timePickerMode="spinner" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="-30dp">
+
+        <TextView
+            android:focusable="false"
+            android:layout_width="0dp"
+            android:layout_height="24dp"
+            android:layout_weight="1"
+            android:gravity="left|center"
+            android:text="@string/after"
+            android:textColor="@android:color/black" />
+
+        <Button
+            android:id="@+id/plus1hourA"
+            android:padding="0dp"
+            android:text="@string/plus1hour"
+            android:layout_width="0dp"
+            android:layout_height="24dp"
+
+            android:gravity="center"
+            android:textSize="12sp"
+            android:layout_weight="1" />
+
+        <Button
+            android:id="@+id/plus30A"
+            android:padding="0dp"
+            android:text="@string/plus30"
+            android:layout_width="0dp"
+            android:layout_height="24dp"
+            android:gravity="center"
+            android:textSize="12sp"
+            android:layout_weight="1" />
+
+        <Button
+            android:id="@+id/plus10A"
+            android:padding="0dp"
+            android:text="@string/plus10"
+            android:layout_width="0dp"
+            android:layout_height="24dp"
+            android:gravity="center"
+            android:textSize="12sp"
+            android:layout_weight="1" />
+
+        <Button
+            android:id="@+id/plus5A"
+            android:padding="0dp"
+            android:text="@string/plus5"
+            android:layout_gravity="right"
+            android:layout_width="0dp"
+            android:layout_height="24dp"
+            android:gravity="center"
+            android:textSize="12sp"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <TimePicker
+        android:id="@+id/time_after"
+        android:layerType="hardware"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleY="0.7"
+        android:timePickerMode="spinner" />
+
+    <TextView
+        android:focusable="false"
+        android:layout_marginTop="-30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/select_color"
+        android:textColor="@android:color/black" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/dialog_recycler"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:layout_marginBottom="20dp"
+        android:orientation="horizontal" />
+</LinearLayout>

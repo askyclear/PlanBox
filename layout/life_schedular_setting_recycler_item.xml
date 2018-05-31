@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/materialPrimary_pupple50"
+    app:cardElevation="5dp"
+    android:layout_marginBottom="6dp">
+
+    <LinearLayout
+        android:background="@color/materialPrimary_pupple50"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingRight="6dp"
+        android:paddingLeft="6dp">
+
+        <TextView
+            android:background="@drawable/border_right"
+            android:id="@+id/setting_days"
+            android:layout_width="0dp"
+            android:paddingRight="6dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textSize="20sp" />
+
+        <TextView
+            android:paddingLeft="6dp"
+            android:id="@+id/setting_name"
+            android:gravity="center_vertical"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3" />
+
+        <Button
+            android:id="@+id/setting_choose"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="right"
+            android:layout_weight="1" />
+    </LinearLayout>
+</android.support.v7.widget.CardView>

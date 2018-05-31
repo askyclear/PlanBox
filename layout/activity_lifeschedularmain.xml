@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/materialPrimary_pupple50">
+
+    <android.support.v7.widget.Toolbar
+        android:background="@color/colorPrimary"
+        android:layout_alignParentTop="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="6dp"
+        android:id="@+id/life_main_toolbar">
+
+        <ImageButton
+            android:id="@+id/life_main_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/toolbar_back"
+            android:layout_marginLeft="16dp"
+            android:contentDescription="@string/setting_back" />
+
+        <TextView
+            android:id="@+id/toolbar_title"
+            android:layout_gravity="center"
+            android:text="@string/Life_Schedular"
+            android:textColor="@android:color/primary_text_light"
+            android:textSize="20sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <ImageButton
+            android:background="@drawable/toolbar_setting"
+            android:layout_gravity="right"
+            android:id="@+id/life_main_setting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="16dp"
+            android:contentDescription="@string/setting_text" />
+    </android.support.v7.widget.Toolbar>
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_below="@id/life_main_toolbar"
+        android:id="@+id/life_main_recycler"
+        android:layout_width="match_parent"
+        app:layoutManager="GridLayoutManager"
+        android:layout_height="match_parent" />
+
+    <com.github.clans.fab.FloatingActionButton
+        android:id="@+id/life_main_fab"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_width="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginRight="8dp"
+        android:src="@drawable/fab_add"
+        android:layout_height="wrap_content"
+        app:fab_colorNormal="@color/colorAccent"
+        app:fab_colorPressed="@color/colorAccentPressed"
+        app:fab_colorRipple="@color/colorAccentRipple" />
+
+</RelativeLayout>
